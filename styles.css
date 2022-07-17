@@ -99,6 +99,10 @@ p {
   opacity: 0.7;
 }
 
+.hide {
+  display: none;
+}
+
 .p-1 {
   max-width: 39.0625rem;
   margin-left: auto;
