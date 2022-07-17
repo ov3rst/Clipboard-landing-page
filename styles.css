@@ -1,0 +1,300 @@
+:root {
+  /* Colors */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+
+  /* font */
+  --font: "Bai Jamjuree", sans-serif;
+}
+
+/** Reset **/
+html {
+  box-sizing: inherit;
+  font-size: 16px;
+  font-family: var(--font);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  color: var(--Dark-Grayish-Blue);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.35rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  line-height: 1.7rem;
+  margin-top: 1rem;
+}
+
+/** Utilities **/
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.download-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin-top: 3.5rem;
+}
+
+.download-btn a {
+  border-radius: 2rem;
+  border-bottom: medium solid;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.download-btn a:first-of-type {
+  background-color: var(--Strong-Cyan);
+  border-color: hsl(171, 66%, 38%);
+}
+
+.download-btn a:last-of-type {
+  background-color: var(--Light-Blue);
+  border-color: hsl(233, 54%, 54%);
+}
+
+.download-btn a:hover {
+  opacity: 0.7;
+}
+
+.p-1 {
+  max-width: 39.0625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  margin-top: 4rem;
+}
+
+/** Page styles **/
+.header {
+  margin: 5rem auto 0;
+  text-align: center;
+}
+
+/** history **/
+.history {
+  margin-top: 4rem;
+}
+
+/** snippets **/
+.snippets {
+  margin-top: 10rem;
+}
+
+.snippets img {
+  margin-top: 4rem;
+}
+
+.snippets-descriptions {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/** access **/
+.access {
+  margin-top: 10rem;
+}
+
+.access img {
+  margin-top: 4rem;
+}
+
+/** Supercharge **/
+.supercharge {
+  margin-top: 7rem;
+}
+
+.supercharge-descriptions {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.supercharge-desc-item > h3 {
+  margin-top: 2.7rem;
+}
+
+/** Companies **/
+.companies {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+.companies img {
+  width: 9rem;
+  height: auto;
+}
+
+/** Download **/
+.download {
+  margin-top: 10rem;
+}
+
+/** Footer **/
+.footer {
+  margin-top: 10rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer img {
+  width: 3.5rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-links a:hover {
+  color: var(--Strong-Cyan);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.socials svg:hover path {
+  fill: var(--Strong-Cyan);
+  cursor: pointer;
+}
+
+.attribution {
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-image: url(./images/bg-header-desktop.png);
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .download-btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .snippets-content {
+    display: flex;
+    margin: 4rem 0 0;
+    gap: 4rem;
+    text-align: start;
+  }
+
+  .snippets-content img {
+    margin: 0;
+  }
+
+  .supercharge {
+    margin-top: 3rem;
+  }
+
+  .snippets-descriptions {
+    gap: 4rem;
+    padding-left: 2rem;
+    margin-top: 4.5rem;
+  }
+
+  .supercharge-descriptions {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1.5rem;
+  }
+
+  .supercharge-desc-item {
+    width: 100%;
+  }
+
+  .companies {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    gap: 7rem;
+  }
+
+  .nav-links {
+    flex-direction: row;
+  }
+
+  .socials {
+    margin-left: auto;
+  }
+
+  .attribution {
+    position: absolute;
+    left: calc(50% - 8.5625rem);
+    bottom: -2rem;
+  }
+}
